@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import { FC, useState } from 'react'
 import Image from 'next/image'
 
 export const Sidebar: FC = () => {
@@ -112,7 +112,7 @@ export const Sidebar: FC = () => {
                 </div>
               }
               <li>Galeria</li>
-              <li>Equipos</li>
+              <li>Nosotros</li>
               <li>Contactos</li>
               <div className='container-button-cita'>
                 <button>Reservar una cita</button>

@@ -79,7 +79,7 @@ export const Navbar: FC<Props> = ({scrollAnimation}) => {
         </div>
 
         <div className='hover-menu-list'>Galería</div>
-        <div className='hover-menu-list'>Equipos</div>
+        <div className='hover-menu-list'>Nosotros</div>
         <div className='hover-menu-list'>Contactos</div>
       </div>
 
