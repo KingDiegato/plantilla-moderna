@@ -12,7 +12,7 @@
 }
 
 .social-media-image{
-    max-width: 80%;
+    width: 60%;
     height: auto;
 }
 
@@ -23,7 +23,7 @@
 @media screen and (min-width: 600px){
     
     .social-media-image{
-        max-width: 70%;
+        width: 60%;
     }
 }
 
@@ -37,6 +37,7 @@
     }
 
     .social-media-image{
+        width: 70%;
         filter: grayscale(1);
         cursor: pointer;
         transition: all .3s;
@@ -52,4 +53,19 @@
         width: 80%;
         margin: 0 auto;
     }
+
+    .social-media-image{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1536px){
+    .social-media{
+        width: 1200px;
+    }
+    
+    .social-media-image{
+        width: 200px;
+    }
+
 }

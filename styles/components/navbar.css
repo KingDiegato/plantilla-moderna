@@ -76,6 +76,15 @@
         transition: all .3s;
     }
 
+    .navbar-icon-item-menu svg{
+        fill: white;
+    }
+
+    .hover-menu-list:hover .navbar-icon-item-menu svg{
+        fill: #24284d;
+        transition: all .3s;
+    }
+
     .hover-submenu-list{
         cursor: pointer;
     }

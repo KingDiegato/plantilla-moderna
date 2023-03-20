@@ -30,6 +30,7 @@ export const Navbar: FC<Props> = ({scrollAnimation}) => {
           </div>
           
           <div
+            className='navbar-icon-item-menu'
             onClick={ () => setBtnSubMenu(!btnSubMenu) }
           >
               {
@@ -37,7 +38,7 @@ export const Navbar: FC<Props> = ({scrollAnimation}) => {
                 <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   style={{
-                    fill: 'white',
+                    // fill: 'white',
                     transform: 'scale(0.5)',
                     width: '40px',
                     height:'40px',
@@ -49,7 +50,7 @@ export const Navbar: FC<Props> = ({scrollAnimation}) => {
                 <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   style={{
-                    fill: 'white',
+                    // fill: 'white',
                     transform: 'scale(0.5)',
                     width: '40px',
                     height:'40px',

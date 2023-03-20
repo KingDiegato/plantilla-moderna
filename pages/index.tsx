@@ -7,6 +7,10 @@ import { SocialMedia } from '../components/socialMedia';
 import { Experience } from '../components/experience';
 import { ServiceSection } from '../components/serviceSection';
 import { SectionAbout } from '../components/sectionAbout';
+import { SectionContact } from '../components/sectionContact';
+import { SatisfiedCustomers } from '../components/satisfiedCustomers';
+import { FrecuentQuestions } from '../components/frequentQuestions';
+import { Footer } from '../components/footer';
 
 const Home: NextPage = () => {
 
@@ -29,16 +33,14 @@ const Home: NextPage = () => {
 
     <SectionAbout />
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati magnam sunt pariatur voluptatibus, sit quaerat repellendus nulla aperiam similique rerum impedit repudiandae optio minima saepe amet placeat aliquam labore!</p>
+    <SectionContact />
+
+    <SatisfiedCustomers />
+
+    <FrecuentQuestions />
+
+    <Footer />
+
   </PlantillaLayout>
   )
 }

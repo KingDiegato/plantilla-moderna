@@ -103,6 +103,10 @@
         transition: all .3s;
     }
 
+    .container-gente-sonriendo{
+        width: 900px;
+    }
+    
     .image-gente-sonriendo{
         width: 900px;
     }
@@ -113,4 +117,5 @@
     .main{
         background-attachment: fixed;
     }
+
 }

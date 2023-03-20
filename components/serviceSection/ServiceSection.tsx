@@ -9,7 +9,7 @@ export const ServiceSection: FC = () => {
         <div className='service-section-container'>
             <div className='service-section-container-card'>
                 <div className='service-section-image-gradient1'>
-                    <div></div>
+                    <div className='service-section-image-gradient-background animate__animated animate__fadeIn animate__faster'></div>
                 </div>
                 <div className='service-section-info'>
                     <div className='service-section-info-title'>Diseño De Sonrisa</div>
@@ -19,7 +19,7 @@ export const ServiceSection: FC = () => {
             </div>
             <div className='service-section-container-card'>
                 <div className='service-section-image-gradient2'>
-                    <div></div>
+                    <div className='service-section-image-gradient-background animate__animated animate__fadeIn animate__faster'></div>
                 </div>
                 <div className='service-section-info'>
                     <div className='service-section-info-title'>Endodoncia</div>
@@ -29,7 +29,7 @@ export const ServiceSection: FC = () => {
             </div>
             <div className='service-section-container-card'>
                 <div className='service-section-image-gradient3'>
-                    <div></div>
+                    <div className='service-section-image-gradient-background animate__animated animate__fadeIn animate__faster'></div>
                 </div>
                 <div className='service-section-info'>
                     <div className='service-section-info-title'>Odontología Preventiva Y Restauradora</div>
@@ -39,8 +39,8 @@ export const ServiceSection: FC = () => {
             </div>
             <div className='service-section-container-card'>
                  <div className='service-section-image-gradient4'>
-                    <div></div>
-                </div>
+                    <div className='service-section-image-gradient-background animate__animated animate__fadeIn animate__faster'></div>
+                 </div>
                 <div className='service-section-info'>
                     <div className='service-section-info-title'>Ortodoncia Y Ortopedia</div>
                     <div className='service-section-info-subtitle'>La Ortopedia es una sub especialidad de la Ortodoncia y trata...</div>

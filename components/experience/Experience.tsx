@@ -1,14 +1,19 @@
 import {FC} from 'react';
 import Image from 'next/image';
 
-import ImageDentistaExperience from '../../public/image/dentista-examinando-dientes-paciente-femenino.webp';
-import ImageClientesExperience from '../../public/image/dfggfdfdggfd.webp';
+// import ImageDentistaExperience from '../../public/image/dentista-examinando-dientes-paciente-femenino.webp';
+// import ImageClientesExperience from '../../public/image/dfggfdfdggfd.webp';
 
 export const Experience: FC = () => {
   return (
     <div className='experience'>
         <div className='experience-container-img'>
-            <Image src={ImageDentistaExperience} alt='imagen de dentista' className='img-dentista-experience' />
+            {/* <Image src={ImageDentistaExperience} alt='imagen de dentista' className='img-dentista-experience' /> */}
+            <img 
+                src={'/image/dentista-examinando-dientes-paciente-femenino.webp'} 
+                alt='imagen de dentista' 
+                className='img-dentista-experience' 
+            />
         </div>
 
         <div className='container-experience'>
@@ -30,7 +35,8 @@ export const Experience: FC = () => {
             </div>
             <div className='experience-container-clients'>
                 <div>
-                    <Image src={ImageClientesExperience} alt='imagen de clientes' className='img-clients-experience' />
+                    {/* <Image src={ImageClientesExperience} alt='imagen de clientes' className='img-clients-experience' /> */}
+                    <img src={'/image/dfggfdfdggfd.webp'} alt='imagen de clientes' className='img-clients-experience' />
                 </div>
                 <div>Más de 200 clientes confían en nosotros</div>
             </div>
