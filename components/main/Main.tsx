@@ -6,6 +6,7 @@ interface Props {
 }
 
 import ImageGenteSonriendo from '../../public/image/gente-sonriendo.webp';
+import { navigationForm } from '../../helpers';
 
 export const Main: FC<Props> = ({ setScrollAnimation }) => {
 
@@ -25,13 +26,24 @@ export const Main: FC<Props> = ({ setScrollAnimation }) => {
     }
   }, []);
 
+  const handleClickScrollForm = (e: any) => {
+    e.preventDefault();
+
+    navigationForm();
+  } 
+
   return (
     <div className='main' id='animationScroll'>
         <div className='container-main'>
             <div className='container-main-slogan'>Protegemos tu sonrisa</div> 
             <div className='container-main-slogan2'>Una sonrisa crea un cambio positivo, buena impresión y es nuestra carta de presentación.</div>
             <div className='container-main-button'>
-                <button>Reservar una cita</button>
+                <a 
+                  href='#formulario'
+                  onClick={handleClickScrollForm}
+                >
+                  Reservar una cita
+                </a>
             </div>
         </div>
 

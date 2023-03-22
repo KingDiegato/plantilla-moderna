@@ -45,7 +45,7 @@
     margin-bottom: 30px;
 }
 
-.container-main-button button{
+.container-main-button a{
     margin: 0 auto;
     background-color: #ff571c;
     color: white;
@@ -55,6 +55,7 @@
     font-size: 20px;
     position: relative;
     z-index: 1000;
+    text-decoration: none;
 
 }
 
@@ -93,12 +94,12 @@
         margin-bottom: 40px;
     }
 
-    .container-main-button button{
+    .container-main-button a{
         cursor: pointer;
         font-size: 25px;
     }
 
-    .container-main-button button:hover{
+    .container-main-button a:hover{
         background-color: #24284d;
         transition: all .3s;
     }

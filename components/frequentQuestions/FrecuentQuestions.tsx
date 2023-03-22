@@ -1,9 +1,16 @@
 import { FC, useState } from 'react';
+import { navigationForm } from '../../helpers';
 import { Accordion } from './Accordion';
 
 export const FrecuentQuestions: FC = () => {
 
     const [active, setActive] = useState('');
+
+    const handleClickScrollForm = (e:any) => {
+        e.preventDefault();
+
+        navigationForm();
+    }
 
   return (
     <div className='frecuent-questions'>
@@ -14,7 +21,12 @@ export const FrecuentQuestions: FC = () => {
                 <img src="/image/paciente-mujer-dentista.webp" alt="paciente mujer" />
             </div>
 
-            <button>Reservar una cita</button>
+            <a
+                href='#formulario'
+                onClick={handleClickScrollForm}
+            >
+                Reservar una cita
+            </a>
         </div>
 
         <div className='frecuent-questions-container-accordion'>
