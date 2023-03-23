@@ -76,12 +76,12 @@
     width: 100%;
 }
 
-.container-button-cita button{
+.container-button-cita a{
     background-color: #ff571c;
     color: white;
     border: 0;
     border-radius: 20px 20px 0px 20px;
     padding: 15px;
-    font-size: 15px;
+    font-size: 20px;
 }
 

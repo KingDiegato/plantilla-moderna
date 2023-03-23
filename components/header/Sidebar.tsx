@@ -1,5 +1,7 @@
 import { FC, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
+import { navigationForm } from '../../helpers';
 
 export const Sidebar: FC = () => {
 
@@ -8,7 +10,12 @@ export const Sidebar: FC = () => {
 
 
   // Logo
-  const logo = '/image/LOGO1.png';
+  const logo = '/image/logo-ejemplo.webp';
+
+  const handleClickButton = () => {
+    navigationForm();
+    setBtnMenu(!btnMenu);
+  }
 
   return (
     <div
@@ -16,7 +23,9 @@ export const Sidebar: FC = () => {
     >
 
       <div>
-        <Image src={logo} alt='logo' width={200} height={50} />
+        <Link href="/">
+          <Image src={logo} alt='logo' width={200} height={50} />
+        </Link>
       </div>
 
       {
@@ -54,12 +63,14 @@ export const Sidebar: FC = () => {
           <div className='container-list-submenu'>
 
             <ul className='list-submenu'>
-              <li>Inicio</li>
+              <Link href="/">
+                <li>Inicio</li>
+              </Link>
               <li 
                 className='list-expand-submenu'
                 onClick={ () => setBtnSubMenu(!btnSubMenu) }
               >
-                Especialidades 
+                Servicios
                 
                 <div>
                   {
@@ -101,21 +112,29 @@ export const Sidebar: FC = () => {
                 <div
                   className='sub-submenu animate__animated animate__backInDown'
                 >
-                  <div>Cirugía oral</div>
-                  <div>Diseño de sonrisa</div>
-                  <div>Endodoncista</div>
-                  <div>Implantología dental</div>
-                  <div>Ortodoncista</div>
-                  <div>Rehabilitaciín oral</div>
-                  <div>Odontología general</div>
-                  <div>Periodoncia</div>
+                  <Link href="/services/service-one">
+                    <div>Service One</div>
+                  </Link>
+                  <Link href="/services/service-two">
+                    <div>Service Two</div>
+                  </Link>
+                  <Link href="/services/service-three">
+                    <div>Service Three</div>
+                  </Link>
+                  <Link href="/services/service-four">
+                    <div>Service Four</div>
+                  </Link>
                 </div>
               }
               <li>Galeria</li>
               <li>Nosotros</li>
               <li>Contactos</li>
               <div className='container-button-cita'>
-                <button>Reservar una cita</button>
+                <a 
+                  onClick={handleClickButton}
+                >
+                  Reservar una cita
+                </a>
               </div>
             </ul>
           </div>

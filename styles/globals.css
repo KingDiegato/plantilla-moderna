@@ -28,3 +28,11 @@
 @import url(./components/accordion.css);
 
 @import url(./components/footer.css);
+
+@import url(./components/slider-service.css);
+
+
+/* Service One */
+@import url(./components/service-one/main.css);
+
+@import url(./components/service-one/section-service.css);

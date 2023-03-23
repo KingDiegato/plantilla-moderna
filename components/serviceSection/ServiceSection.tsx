@@ -1,4 +1,5 @@
 import {FC} from 'react'
+import Link from 'next/link'
 
 export const ServiceSection: FC = () => {
   return (
@@ -14,7 +15,9 @@ export const ServiceSection: FC = () => {
                 <div className='service-section-info'>
                     <div className='service-section-info-title'>Diseño De Sonrisa</div>
                     <div className='service-section-info-subtitle'>Aplica en pacientes con piezas dentarias defectuosas, decoloradas...</div>
-                    <button>Ver más</button>
+                    <Link href="/services/service-one">
+                        <button>Ver más</button>
+                    </Link>
                 </div>
             </div>
             <div className='service-section-container-card'>
@@ -24,7 +27,9 @@ export const ServiceSection: FC = () => {
                 <div className='service-section-info'>
                     <div className='service-section-info-title'>Endodoncia</div>
                     <div className='service-section-info-subtitle'>O tratamiento de conducto.  Esta Especialidad trata a las...</div>
-                    <button>Ver más</button>
+                    <Link href="/services/service-two">
+                        <button>Ver más</button>
+                    </Link>
                 </div>
             </div>
             <div className='service-section-container-card'>
@@ -34,7 +39,9 @@ export const ServiceSection: FC = () => {
                 <div className='service-section-info'>
                     <div className='service-section-info-title'>Odontología Preventiva Y Restauradora</div>
                     <div className='service-section-info-subtitle'>La Odontología preventiva es aquella que empieza por visitar...</div>
-                    <button>Ver más</button>
+                    <Link href="/services/service-three">
+                        <button>Ver más</button>
+                    </Link>
                 </div>
             </div>
             <div className='service-section-container-card'>
@@ -44,7 +51,9 @@ export const ServiceSection: FC = () => {
                 <div className='service-section-info'>
                     <div className='service-section-info-title'>Ortodoncia Y Ortopedia</div>
                     <div className='service-section-info-subtitle'>La Ortopedia es una sub especialidad de la Ortodoncia y trata...</div>
-                    <button>Ver más</button>
+                    <Link href="/services/service-four">
+                        <button>Ver más</button>
+                    </Link>
                 </div>
             </div>
         </div>

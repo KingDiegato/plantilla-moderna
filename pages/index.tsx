@@ -10,7 +10,6 @@ import { SectionAbout } from '../components/sectionAbout';
 import { SectionContact } from '../components/sectionContact';
 import { SatisfiedCustomers } from '../components/satisfiedCustomers';
 import { FrecuentQuestions } from '../components/frequentQuestions';
-import { Footer } from '../components/footer';
 
 const Home: NextPage = () => {
 
@@ -38,8 +37,6 @@ const Home: NextPage = () => {
     <SatisfiedCustomers />
 
     <FrecuentQuestions />
-
-    <Footer />
 
   </PlantillaLayout>
   )

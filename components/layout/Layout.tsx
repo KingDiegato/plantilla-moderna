@@ -3,13 +3,14 @@ import Head from 'next/head';
 import { Navbar } from '../header';
 import { Sidebar } from '../header';
 import { ButtonUp } from '../buttonUp';
+import { Footer } from '../footer';
 
 type MetaProps = {
     children: ReactNode,
     title: string,
     contentPage: string,
     keywords?: string,
-    scrollAnimation: number,
+    scrollAnimation?: number,
 }
 
 export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage, keywords= 'dentista', scrollAnimation }) => {
@@ -20,16 +21,18 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage, k
             <title>{ title }</title>
             <meta name="description" content={ contentPage } />
             <meta name='keywords' content={ keywords } />
-            <link rel="shortcut icon" href="/image/LOGO1.png" />
+            <link rel="shortcut icon" href="/image/logo-ejemplo.webp" />
         </Head>
 
-        <Navbar scrollAnimation={scrollAnimation} />
+        <Navbar scrollAnimation={scrollAnimation!} />
 
         <Sidebar />
 
-        <ButtonUp scrollAnimation={scrollAnimation} />
+        <ButtonUp scrollAnimation={scrollAnimation!} />
 
         {children}
+
+        <Footer />
     </>
   )
 }

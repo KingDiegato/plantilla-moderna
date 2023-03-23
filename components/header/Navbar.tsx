@@ -1,6 +1,7 @@
-import React, { FC, ReactHTMLElement, useState } from 'react';
+import React, { FC, useState } from 'react';
 import Image from 'next/image';
 import { navigationForm } from '../../helpers';
+import Link from 'next/link';
 
 interface Props{
   scrollAnimation: number;
@@ -10,7 +11,7 @@ export const Navbar: FC<Props> = ({scrollAnimation}) => {
 
   const [btnSubMenu, setBtnSubMenu] = useState(false);
 
-  const logo = "/image/LOGO1.png";
+  const logo = "/image/logo-ejemplo.webp";
 
   const handleClickScrollForm = (e: any) => {
     e.preventDefault();
@@ -23,16 +24,20 @@ export const Navbar: FC<Props> = ({scrollAnimation}) => {
       className={`menu-desktop ${ scrollAnimation !== 0 ? 'animation-scroll' : 'remove-animation-scroll' }`}
     >
       <div className='container-logo-desktop hover-icon-logo'>
-        <Image src={logo} alt="logo" width={230} height={90} />
+        <Link href="/">
+          <Image src={logo} alt="logo" width={230} height={90} />
+        </Link>
       </div>
 
       <div className='container-list-menu-desktop'>
-        <div className='hover-menu-list'>Inicio</div>
+        <Link href="/">
+          <div className='hover-menu-list'>Inicio</div>
+        </Link>
         <div className='submenu-desktop hover-menu-list'>
           <div
             onClick={ () => setBtnSubMenu(!btnSubMenu) }
           >
-            Especialidades
+            Servicios
           </div>
           
           <div
@@ -72,14 +77,26 @@ export const Navbar: FC<Props> = ({scrollAnimation}) => {
               <div
                 className='container-submenu-desktop animate__animated animate__backInDown'
               >
-                <div className='hover-submenu-list'>Cirugía oral</div>
-                <div className='hover-submenu-list'>Diseño de sonrisa</div>
-                <div className='hover-submenu-list'>Endodoncista</div>
-                <div className='hover-submenu-list'>Implantología dental</div>
-                <div className='hover-submenu-list'>Ortodoncista</div>
-                <div className='hover-submenu-list'>Rehabilitaciín oral</div>
-                <div className='hover-submenu-list'>Odontología general</div>
-                <div className='hover-submenu-list'>Periodoncia</div>
+                <Link href="/services/service-one">
+                  <div className='hover-submenu-list'>
+                    Service One
+                  </div>
+                </Link>
+                <Link href="/services/service-two">
+                  <div className='hover-submenu-list'>
+                    Service Two
+                  </div>
+                </Link>
+                <Link href="/services/service-three">
+                  <div className='hover-submenu-list'>
+                    Service Three
+                  </div>
+                </Link>
+                <Link href="/services/service-four">
+                  <div className='hover-submenu-list'>
+                    Service Four
+                  </div>
+                </Link>
               </div>
             }
 

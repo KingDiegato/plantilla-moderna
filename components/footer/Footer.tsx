@@ -5,7 +5,7 @@ export const Footer: FC = () => {
     <div className='footer'>
         <div className='footer-container-logo'>
             <div className='footer-img'>
-                <img src="/image/LOGO1.png" alt="logo" />
+                <img src="/image/logo-ejemplo.webp" alt="logo" />
             </div>
             <div className='footer-contact'>
                 <div className='footer-contact-container'>
