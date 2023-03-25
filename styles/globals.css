@@ -36,3 +36,9 @@
 @import url(./components/service-one/main.css);
 
 @import url(./components/service-one/section-service.css);
+
+
+/* Gallery */
+@import url(./components/gallery/gallery-header.css);
+
+@import url(./components/gallery/gallery.css);

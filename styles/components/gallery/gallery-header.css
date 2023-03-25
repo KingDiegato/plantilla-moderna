@@ -1,0 +1,62 @@
+.gallery-header{
+    width: 100%;
+    height: 900px;
+    background-image: url("../../../public/image/multiracial-grupo-joven-gente-toma-selfie.webp");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-header-gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(36,40,77);
+    background: linear-gradient(32deg, rgba(36,40,77,0.4599089635854342) 36%, rgba(255,87,28,0.468312324929972) 50%);
+}
+
+.service-one-main-title, .service-one-main-button{
+    z-index: 1000;
+}
+
+.service-one-main-title{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.service-one-main-button{
+    margin: 0 auto;
+    background-color: #ff571c;
+    color: white;
+    border: 0;
+    border-radius: 20px 20px 0px 20px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.service-one-main-box-radius{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -2px;
+}
+
+
+@media screen and (min-width: 900px){
+    .service-one-main-title{
+        font-size: 60px;
+    }
+
+    .service-one-main-button{
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .service-one-main-button:hover{
+        background-color: #24284d;
+        transition: all .3s;
+    }
+}

@@ -126,7 +126,9 @@ export const Sidebar: FC = () => {
                   </Link>
                 </div>
               }
-              <li>Galeria</li>
+              <Link href="/gallery">
+                <li>Galeria</li>
+              </Link>
               <li>Nosotros</li>
               <li>Contactos</li>
               <div className='container-button-cita'>
